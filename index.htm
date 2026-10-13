@@ -23,4 +23,50 @@
     </style>
 </head>
 
+<body class="bg-white font-sans text-[#291725]">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 border-b border-pink-100 bg-white/95">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10">
+
+            <!-- Logo -->
+            <a href="#home" class="text-2xl font-extrabold tracking-tight text-[#9D174D]">
+                Nova<span class="text-[#291725]">Cosmetics.</span>
+            </a>
+
+            <!-- Mobile menu checkbox -->
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+            <!-- Desktop navigation -->
+            <div class="hidden items-center gap-8 text-sm font-medium md:flex">
+                <a href="#home" class="transition hover:text-pink-600">Home</a>
+                <a href="#categories" class="transition hover:text-pink-600">Categories</a>
+                <a href="#about" class="transition hover:text-pink-600">About Us</a>
+                <a href="#contact" class="transition hover:text-pink-600">Contact</a>
+            </div>
+
+            <!-- Desktop button -->
+            <a href="#categories"
+               class="hidden rounded-full bg-[#9D174D] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#701A3D] md:inline-block">
+                Shop Now
+            </a>
+
+            <!-- Mobile menu icon -->
+            <label for="menu-toggle"
+                   class="cursor-pointer rounded-lg border border-pink-200 px-3 py-2 text-xl md:hidden"
+                   aria-label="Open navigation menu">
+                ☰
+            </label>
+
+            <!-- Mobile navigation -->
+            <div class="absolute left-0 top-full hidden w-full flex-col gap-4 border-b border-pink-100 bg-white px-6 py-6 shadow-lg peer-checked:flex md:hidden">
+                <a href="#home" class="hover:text-pink-600">Home</a>
+                <a href="#categories" class="hover:text-pink-600">Categories</a>
+                <a href="#about" class="hover:text-pink-600">About Us</a>
+                <a href="#contact" class="hover:text-pink-600">Contact</a>
+                <a href="#categories" class="font-semibold text-pink-700">Shop Now →</a>
+            </div>
+
+        </nav>
+
 
